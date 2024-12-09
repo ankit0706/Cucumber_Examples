@@ -13,9 +13,8 @@ In above lines, we defined 2 behaviors for our rest controller. This will be wri
 That's BDD.
 
 
-=============================
+
 Technical Details
-=============================
 
 First of all, to use cucumber in our Java/Spring project, we need to add the relevant dependencies in our pom.xml
 These dependencies are cucumber-java, cucumber-junit and the junit maven dependencies. In this code you can find them in the pom.xml file.
@@ -25,13 +24,13 @@ This will give us all the cucumber functionality, we need.
 With Cucumber, first we take a feature (for example, a controller) and then define one or more scenarios in it. 
 These scenarios are written in cucumber's Gherkin language. It is nothing but plaintext file in english which anyone can read and understand. For example:
 
-**Feature**: Controller
+ Feature: Controller
   I want to use this template for my controller code
 
-  **Scenario**: Getting User Details
-    **Given** A valid user sends the request
-    **When** user's details are present in the database
-    **Then** return the details in json format
+    Scenario: Getting User Details
+      Given A valid user sends the request
+      When user's details are present in the database
+      Then return the details in json format
 
 This simple test file is called the feature file and it will saved like this _XYZControler.feature_
 
